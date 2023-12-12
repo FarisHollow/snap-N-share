@@ -22,6 +22,39 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
         ),
+        inputDecorationTheme: InputDecorationTheme(
+          prefixIconColor: const Color.fromRGBO(29, 41, 57, 1),
+          suffixIconColor: const Color.fromRGBO(29, 41, 57, 1),
+          fillColor: Colors.white,
+          hintStyle: TextStyle(color: Colors.grey.shade400, fontSize: 14),
+          contentPadding: const EdgeInsets.symmetric(
+            vertical: 2,
+            horizontal: 2,
+          ),
+          border: const OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.blue,
+            ),
+          ),
+          focusedErrorBorder: const OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.red,
+            ),
+          ),
+          focusedBorder: const OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.blue,
+            ),
+          ),
+          enabledBorder: const OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.blue,
+            ),
+          ),
+          disabledBorder: const OutlineInputBorder(
+            borderSide: BorderSide(),
+          ),
+        ),
       ),
       home: TestWidget(),
     );
